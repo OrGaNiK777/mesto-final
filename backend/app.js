@@ -2,14 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 
-// const routes = require('./routes/index');
+const routes = require('./routes/index');
 const customErrorsHandler = require('./middlewares/customErrorsHandler');
 const { PORT, host } = require('./utils/consctants');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-// app.use(express.static('../frontend/build'));
+app.use(express.static('../frontend/build'));
 
 mongoose
   .connect(`mongodb://${host}:27017/MestoDB`, {
@@ -25,7 +25,7 @@ app.use(express.json());
 
 app.use(requestLogger);
 
-app.use('/api', require('./routes'));
+app.use(routes);
 
 app.use(errorLogger);
 
