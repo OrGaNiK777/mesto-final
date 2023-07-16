@@ -98,7 +98,7 @@ const api = new Api({
 	url: "http://api.mesto.organik.nomoredomains.xyz",
 	headers: {
 		"Content-Type": "application/json",
-		authorization: `${jwt}`,
+		authorization: `Bearer ${jwt}`,
 	},
 });
 
