@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
-//const helmet = require('helmet');
+// const helmet = require('helmet');
 
 const cors = require('./middlewares/cors');
 const routes = require('./routes/index');
@@ -11,7 +11,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-app.use(express.static('../frontend/build'));
+//app.use(express.static('../frontend/build'));
 
 mongoose
   .connect(`mongodb://${host}:27017/MestoDB`, {
@@ -29,9 +29,9 @@ app.use(requestLogger);
 
 app.use(cors);
 
-//app.use(helmet());
+// app.use(helmet());
 
-app.use(routes);
+app.use('/api', routes);
 
 app.use(errorLogger);
 
