@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 
 const cors = require('./middlewares/cors');
 const routes = require('./routes/index');
@@ -27,7 +27,7 @@ app.use(requestLogger);
 
 app.use(cors);
 
-app.use(helmet());
+//app.use(helmet());
 
 app.use(routes);
 
