@@ -30,7 +30,8 @@ export const checkToken = (token) => {
 	return fetch(`${url}/users/me`, {
 		method: "GET",
 		headers: {
-			headers: headers,
+			Accept: "application/json",
+			"Content-Type": "application/json",
 			authorization: `${token}`,
 		},
 	}).then((res) => checkingResponse(res));

@@ -97,8 +97,8 @@ class Api {
 const api = new Api({
 	url: "https://localhost:3000",
 	headers: {
-		authorization: `${jwt}`,
 		"Content-Type": "application/json",
+		authorization: `${jwt}`,
 	},
 });
 
