@@ -26,11 +26,11 @@ app.use(express.json());
 
 app.use(requestLogger);
 
-app.use(cors);
+//app.use(cors);
 
 app.use(helmet());
 
-app.use(routes);
+//app.use(routes);
 
 app.use(errorLogger);
 
