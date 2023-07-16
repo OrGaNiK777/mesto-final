@@ -4,6 +4,8 @@ const allowedCors = [
   'mesto.organik.nomoredomains.xyz',
   'http://mesto.organik.nomoredomains.xyz',
   'https://mesto.organik.nomoredomains.xyz',
+  'http://api.mesto.organik.nomoredomains.xyz',
+  'https://api.mesto.organik.nomoredomains.xyz',
 ];
 
 module.exports = (req, res, next) => {
