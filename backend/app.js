@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 
-const cors = require('./middlewares/cors');
+//const cors = require('./middlewares/cors');
 const routes = require('./routes/index');
 const customErrorsHandler = require('./middlewares/customErrorsHandler');
 const { PORT, host } = require('./utils/consctants');
