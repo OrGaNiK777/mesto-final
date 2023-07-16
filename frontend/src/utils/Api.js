@@ -1,3 +1,5 @@
+const jwt = localStorage.getItem("jwt");
+
 class Api {
 	constructor(options) {
 		// тело конструктора
@@ -91,8 +93,6 @@ class Api {
 		});
 	}
 }
-
-const jwt = localStorage.getItem("jwt");
 
 const api = new Api({
 	url: "https://localhost:3000",
