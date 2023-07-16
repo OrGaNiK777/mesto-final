@@ -95,7 +95,7 @@ class Api {
 }
 
 const api = new Api({
-	url: "http://localhost:3000",
+	url: "http://mesto.organik.nomoredomains.xyz",
 	headers: {
 		"Content-Type": "application/json",
 		authorization: `${jwt}`,
