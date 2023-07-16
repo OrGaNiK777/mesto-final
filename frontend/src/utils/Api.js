@@ -92,10 +92,12 @@ class Api {
 	}
 }
 
+const jwt = localStorage.getItem("jwt");
+
 const api = new Api({
 	url: "https://localhost:3000",
 	headers: {
-		//authorization: "17275e88-ca40-4ac8-86a3-d9ab7c8e3960",
+		authorization: `Bearer ${jwt}`,
 		"Content-Type": "application/json",
 	},
 });

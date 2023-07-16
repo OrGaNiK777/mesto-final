@@ -96,7 +96,7 @@ function App() {
 			.catch((error) => {
 				console.log(error.message);
 			});
-	}, []);
+	});
 
 	//отправка новой карты
 	function handleAddPlaceSubmit(item) {
