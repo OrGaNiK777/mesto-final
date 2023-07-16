@@ -93,7 +93,7 @@ class Api {
 }
 
 const api = new Api({
-	url: "https://mesto.organik.nomoredomains.xyz",
+	url: "https://localhost:3000",
 	headers: {
 		//authorization: "17275e88-ca40-4ac8-86a3-d9ab7c8e3960",
 		"Content-Type": "application/json",

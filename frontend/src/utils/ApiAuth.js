@@ -1,4 +1,4 @@
-const url = "https://mesto.organik.nomoredomains.xyz";
+const url = "https://localhost:3000";
 const headers = {
 	Accept: "application/json",
 	"Content-Type": "application/json",
