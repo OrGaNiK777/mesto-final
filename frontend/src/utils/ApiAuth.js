@@ -31,7 +31,7 @@ export const checkToken = (token) => {
 		method: "GET",
 		headers: {
 			headers: headers,
-			Authorization: `Bearer ${token}`,
+			authorization: `${token}`,
 		},
 	}).then((res) => checkingResponse(res));
 };
